@@ -27,10 +27,10 @@ export default function AudioList() {
         <thead>
           <tr
             style={{
-              borderBottom: '1px solid #1f2937', // Tailwind border-gray-800
+              borderBottom: '1px solid #1f2937',
               textAlign: 'left',
-              fontSize: '0.875rem', // text-sm (14px)
-              color: '#9ca3af', // text-gray-400
+              fontSize: '0.875rem',
+              color: '#9ca3af', 
             }}
           >
             <th style={{ paddingBottom: '0.75rem', width: '3rem' }}>#</th>
@@ -56,13 +56,13 @@ export default function AudioList() {
               <tr
                 key={track.id}
                 style={{
-                  backgroundColor: isTrackPlaying ? '#10b981' : undefined, // green-500
+                  backgroundColor: isTrackPlaying ? '#10b981' : undefined, 
                   color: isTrackPlaying ? '#ffffff' : undefined,
                   fontWeight: isTrackPlaying ? 600 : undefined,
                   cursor: 'pointer',
                   transition:
                     'background-color 0.2s ease-in-out, color 0.2s ease-in-out',
-                  borderLeft: isTrackPlaying ? '4px solid #059669' : undefined, // green-600
+                  borderLeft: isTrackPlaying ? '4px solid #059669' : undefined,
                 }}
                 onClick={handleClick}
               >
